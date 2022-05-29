@@ -1,6 +1,7 @@
 package com.example.elasticsearch.config
 
 import org.junit.jupiter.api.Assertions
+import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.boot.test.autoconfigure.data.elasticsearch.AutoConfigureDataElasticsearch
@@ -21,6 +22,7 @@ internal class ElasticSearchPropertiesTest constructor(
 
 
     @Test
+    @DisplayName("설정 파일 테스트 케이스")
     fun getProperties() {
         Assertions.assertEquals(elasticSearchProperties.getConfig().getIp(), "localhost")
         Assertions.assertEquals(elasticSearchProperties.getConfig().getPort(), "9200")
