@@ -1,5 +1,6 @@
 package com.example.elasticsearch.config
 
+import com.example.elasticsearch.service.EmployeeService
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
@@ -18,6 +19,7 @@ import org.springframework.test.context.TestPropertySource
 @TestPropertySource("classpath:application.yml")
 internal class ElasticSearchPropertiesTest constructor(
     val elasticSearchProperties: ElasticSearchProperties,
+    val employeeService: EmployeeService
 ) {
 
 
