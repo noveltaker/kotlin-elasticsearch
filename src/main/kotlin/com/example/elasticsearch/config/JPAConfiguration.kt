@@ -10,8 +10,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories
 @Configuration
 @EnableJpaAuditing
 @EnableJpaRepositories(
-    basePackages = ["com.example.elasticsearch.repository"], excludeFilters = [ComponentScan.Filter(
+    basePackages = ["com.example.elasticsearch.repository"],
+    excludeFilters = [ComponentScan.Filter(
         type = FilterType.ASSIGNABLE_TYPE, classes = [EmployeeSearchRepository::class]
     )]
 )
-class JPAConfiguration {}
+private class JPAConfiguration {}

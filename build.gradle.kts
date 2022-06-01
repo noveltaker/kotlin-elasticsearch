@@ -29,6 +29,7 @@ dependencies {
     implementation("org.springframework.data:spring-data-elasticsearch")
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2")
+    testImplementation("io.mockk:mockk:1.12.0")
 }
 
 tasks.withType<KotlinCompile> {
