@@ -15,4 +15,4 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories
         type = FilterType.ASSIGNABLE_TYPE, classes = [EmployeeSearchRepository::class]
     )]
 )
-private class JPAConfiguration {}
+class JPAConfiguration {}
